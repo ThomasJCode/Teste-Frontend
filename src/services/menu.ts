@@ -20,7 +20,7 @@ export default [
     {
         id: 4,
         name: 'DEPOIMENTOS',
-        link: 'depoiments',
+        link: 'depoiment',
         active: false
     },
     {
