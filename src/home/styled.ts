@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 import BannerImg from "../assets/Banner.png"
-
 import BannerMbImg from "../assets/mobile/banner.png"
 
 
