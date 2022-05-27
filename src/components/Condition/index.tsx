@@ -3,6 +3,8 @@ import { FiMinus } from 'react-icons/fi'
 import { useTheme } from 'styled-components'
 import { ButtonBrow } from '../Forms/buttonBrow'
 
+import ConditionImg from '../../assets/condition.png'
+
 const Condition = () => {
     const theme = useTheme();
 
@@ -51,7 +53,7 @@ const Condition = () => {
 
 
                 <S.BoxImage>
-                    <S.ImageCondition src="../../assets/condition.png" alt="Ternos" />
+                    <S.ImageCondition src={ConditionImg} alt="Ternos" />
                 </S.BoxImage>
             </S.BoxBackground>
         </S.Container>

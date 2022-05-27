@@ -1,10 +1,14 @@
 import S from './styled'
 
+import QualityImg from '../../assets/Vector.png'
+import ConfidenceImg from '../../assets/Vector2.png'
+import ExperienceImg from '../../assets/Vector1.png'
+
 const Attributes = () => {
     return (
         <S.Container>
             <S.BoxAttribute>
-                <S.ImageAttribute src="../../assets/Vector.png" alt="qualidade" />
+                <S.ImageAttribute src={QualityImg} alt="qualidade" />
                 <S.TextTitle>Qualidade</S.TextTitle>
                 <S.TextDescription>
                     Camisaria e Alfaiataria 100% artesanal.
@@ -12,7 +16,7 @@ const Attributes = () => {
             </S.BoxAttribute>
             <S.ContainerLine />
             <S.BoxAttribute>
-                <S.ImageAttribute src="../../assets/Vector2.png" alt="confiança" />
+                <S.ImageAttribute src={ConfidenceImg} alt="confiança" />
                 <S.TextTitle>Confiança</S.TextTitle>
                 <S.TextDescription>
                     Atendimento personalizado no escritório ou residência..
@@ -20,7 +24,7 @@ const Attributes = () => {
             </S.BoxAttribute>
             <S.ContainerLine />
             <S.BoxAttribute>
-                <S.ImageAttribute src="../../assets/Vector1.png" alt="experiência" />
+                <S.ImageAttribute src={ExperienceImg} alt="experiência" />
                 <S.TextTitle>Experiência</S.TextTitle>
                 <S.TextDescription>
                     Tradição e modernidade proporcionando elegância.

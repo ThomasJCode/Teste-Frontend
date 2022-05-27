@@ -2,13 +2,16 @@ import S from './styled'
 import { Button } from '../Forms/button'
 import { FiMinus } from 'react-icons/fi'
 
+import ShirtShopImg from '../../assets/camisaria.png'
+import TailoringImg from '../../assets/alfaiataria.png'
+
 
 const Tailoring = () => {
     return (
         <S.Container>
             <S.BoxContent orientation={false}>
                 <S.BoxImage orientation={false}>
-                    <S.ImageTailoring src="../../assets/camisaria.png" />
+                    <S.ImageTailoring src={ShirtShopImg} />
                     <S.BoxBorder />
                 </S.BoxImage>
 
@@ -52,7 +55,7 @@ const Tailoring = () => {
 
             <S.BoxContent orientation={true} >
                 <S.BoxImage orientation={true}>
-                    <S.ImageTailoring src="../../assets/alfaiataria.png" />
+                    <S.ImageTailoring src={TailoringImg} />
                     <S.BoxBorder />
                 </S.BoxImage>
 

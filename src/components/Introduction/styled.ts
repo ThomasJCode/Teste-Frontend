@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export default {
-    Container: styled.section`
+  Container: styled.section`
     display: flex;
     height: 548px;
     overflow: hidden;
@@ -12,7 +12,7 @@ export default {
       flex-direction: column;
     }
   `,
-    BoxImage: styled.div`
+  BoxImage: styled.div`
     width: 566px;
     padding: 54px 98px;
 
@@ -20,11 +20,11 @@ export default {
       display: none;
     }
   `,
-    ImageRenee: styled.img`
+  ImageRenee: styled.img`
     width: 370px;
     height: 439px;
   `,
-    BoxImageMobile: styled.div`
+  BoxImageMobile: styled.div`
     display: none;
 
     @media(max-width:768px) {
@@ -36,7 +36,7 @@ export default {
       margin-top: 25px;
     }
   `,
-    ImageReneeMobile: styled.img`
+  ImageReneeMobile: styled.img`
     display: none;
 
     @media(max-width:768px) {
@@ -45,7 +45,7 @@ export default {
       height: 213px;
     }
   `,
-    BoxDescriptionRenee: styled.div`
+  BoxDescriptionRenee: styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -64,8 +64,8 @@ export default {
       padding: 24px 23px;
     }
   `,
-    BoxAdjust: styled.div``,
-    BoxTitle: styled.div`
+  BoxAdjust: styled.div``,
+  BoxTitle: styled.div`
     display: flex;
     flex-direction: column;
     width: 190px;
@@ -76,7 +76,7 @@ export default {
       flex-direction: column;
     }
   `,
-    TextTitle: styled.h1`
+  TextTitle: styled.h1`
     font-family: ${({ theme }) => theme.fonts.cormorant};
     font-weight: 300;
     color: ${({ theme }) => theme.colors.primaryLigh};
@@ -86,19 +86,19 @@ export default {
       text-align: center;
     }
   `,
-    LineSeparator: styled.hr`
+  LineSeparator: styled.hr`
     width: 53px;    
     margin-top: 10px;
     border-color: ${({ theme }) => theme.colors.primaryLigh};
   `,
-    TextDescriptionOne: styled.p`
+  TextDescriptionOne: styled.p`
     font-family: ${({ theme }) => theme.fonts.lato};
     color: ${({ theme }) => theme.colors.textGray};
     font-weight: 300;
     font-size: 19px;
     margin: 40px 0;
   `,
-    TextObjetive: styled.span`
+  TextObjetive: styled.span`
     font-family: ${({ theme }) => theme.fonts.cormorant};
     color: ${({ theme }) => theme.colors.primaryLigh};
     font-size: 24px;
@@ -112,12 +112,12 @@ export default {
       font-size: 26px;
     }
   `,
-    BoxButton: styled.div`
+  BoxButton: styled.div`
     display: flex;
     align-items: flex-end;
     width: 300px;
   `,
-    TextAuthor: styled.p`
+  TextAuthor: styled.p`
     font-family: ${({ theme }) => theme.fonts.cormorant};
     font-weight: 500;
     font-style: 20px;
@@ -129,7 +129,7 @@ export default {
       margin-top: 11px;
     }
   `,
-    BoxImageBackground: styled.div`
+  BoxImageBackground: styled.div`
     position: absolute;
     width: 156px;
     height: 123px;
@@ -140,7 +140,7 @@ export default {
       display: none;
     }
   `,
-    ImageBackground: styled.img`
+  ImageBackground: styled.img`
     width: 100%;
     height: 100%;
   `,

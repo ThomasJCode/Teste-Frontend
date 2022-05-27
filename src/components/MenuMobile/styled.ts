@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 interface IMenuProps {
-    visible: boolean;
+  visible: boolean;
 }
 
-// eslint-disable-next-line import/no-anonymous-default-export
+
 export default {
-    Container: styled.div<IMenuProps>`
+  Container: styled.div<IMenuProps>`
     position: relative;
     visibility: hidden;
     display: none;
@@ -24,7 +24,7 @@ export default {
       z-index: 8000;
     }    
   `,
-    ButtonClose: styled.button`
+  ButtonClose: styled.button`
     @media(max-width:768px) {
       display: flex;
       border: none;
@@ -39,7 +39,7 @@ export default {
       color: ${({ theme }) => theme.colors.background};
     }    
   `,
-    BoxTextMenu: styled.div`
+  BoxTextMenu: styled.div`
     @media(max-width:768px){
       display: flex;
       flex-direction: column;
@@ -50,7 +50,7 @@ export default {
       margin-top: 54px;
     }    
   `,
-    TextMenu: styled.a`
+  TextMenu: styled.a`
     @media(max-width:768px) {
       text-decoration: none;
       font-family: ${({ theme }) => theme.fonts.lato};
@@ -60,7 +60,7 @@ export default {
       text-transform: uppercase;
     }    
   `,
-    BoxDescription: styled.div`
+  BoxDescription: styled.div`
     @media(max-width:768px) {
       display: flex;
       flex-direction: column;
@@ -69,7 +69,7 @@ export default {
       margin-top: 110px;
     }    
   `,
-    TextMain: styled.p`
+  TextMain: styled.p`
     @media(max-width:768px) {
       font-family: ${({ theme }) => theme.fonts.lato};
       color: ${({ theme }) => theme.colors.primaryLigh};
@@ -79,7 +79,7 @@ export default {
       text-transform: uppercase;
     }    
   `,
-    TextSecondary: styled.span`
+  TextSecondary: styled.span`
     @media(max-width:768px) {
       margin-top: 8px;
       font-family: ${({ theme }) => theme.fonts.lato};

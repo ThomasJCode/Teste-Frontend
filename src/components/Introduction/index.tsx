@@ -1,11 +1,16 @@
 import { Button } from '../Forms/button'
 import S from './styled'
 
+import ReneeImg from '../../assets/Renee.png'
+import AspasImg from '../../assets/aspas.png'
+
+import ReneeMbImg from '../../assets/mobile/reneeM.png'
+
 const Introduction = () => {
     return (
         <S.Container>
             <S.BoxImage>
-                <S.ImageRenee src="../../assets/Renee.png" />
+                <S.ImageRenee src={ReneeImg} />
             </S.BoxImage>
 
             <S.BoxDescriptionRenee>
@@ -16,11 +21,11 @@ const Introduction = () => {
                     </S.BoxTitle>
 
                     <S.BoxImageMobile>
-                        <S.ImageReneeMobile src="assets/mobile/reneeM.png" />
+                        <S.ImageReneeMobile src={ReneeMbImg} />
                     </S.BoxImageMobile>
 
                     <S.BoxImageBackground>
-                        <S.ImageBackground src="../../assets/aspas.png" />
+                        <S.ImageBackground src={AspasImg} />
                     </S.BoxImageBackground>
                     <S.TextDescriptionOne>
                         Com mais de 35 anos de experiência em camisas, calças e ternos sob medida,

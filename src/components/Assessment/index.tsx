@@ -1,5 +1,11 @@
 import S from './styled'
 
+import GareyImg1 from '../../assets/nelson1.png'
+import GareyImg from '../../assets/nelson.png'
+
+import GareyMbImg from '../../assets/mobile/nelsonM.png'
+import GareyMbImg1 from '../../assets/mobile/nelsonM1.png'
+
 const AssessmentNelson = () => {
     return (
         <S.Container>
@@ -19,22 +25,22 @@ const AssessmentNelson = () => {
 
 
                     <S.BoxPhotoNelson>
-                        <S.ImageStyle src="../../assets/nelson1.png" alt="Nelson Garey" />
+                        <S.ImageStyle src={GareyImg1} alt="Nelson Garey" />
                     </S.BoxPhotoNelson>
                 </S.BoxDescriptionLeft>
             </S.BoxDescription>
 
 
             <S.BoxImageMobile>
-                <S.ImagePerfilMobile src="../../assets/mobile/nelsonM.png" />
+                <S.ImagePerfilMobile src={GareyMbImg} />
                 <S.BoxShadowMobile />
                 <S.BoxPhotoMobileFloat>
-                    <S.ImagePhotoMobile src="../../assets/mobile/nelsonM1.png" />
+                    <S.ImagePhotoMobile src={GareyMbImg1} />
                 </S.BoxPhotoMobileFloat>
             </S.BoxImageMobile>
 
             <S.BoxDescriptionRight>
-                <S.ImagePerfil src="../../assets/nelson.png" alt="Nelson Garey" />
+                <S.ImagePerfil src={GareyImg} alt="Nelson Garey" />
                 <S.BoxShadow />
             </S.BoxDescriptionRight>
 

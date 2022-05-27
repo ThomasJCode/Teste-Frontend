@@ -1,11 +1,13 @@
 import S from './styled'
 import menuList from '../../services/menu'
 
+import LogoImg from "../../assets/logoheader.png";
+
 const Menu = () => {
     return (
         <S.Container>
             <S.BoxLogo>
-                <S.ImageLogo src="../../assets/logoheader.png" />
+                <S.ImageLogo src={LogoImg} />
             </S.BoxLogo>
 
             <S.BoxMenu>

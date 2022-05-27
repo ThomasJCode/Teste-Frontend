@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
+import BackImg from '../../assets/depoiments.png'
+
 export default {
-    Container: styled.section`
+  Container: styled.section`
     display: flex;
     position: relative;
     width: 100%;
@@ -14,7 +16,7 @@ export default {
       flex-direction: column-reverse;
     }
   `,
-    BoxDescription: styled.div`
+  BoxDescription: styled.div`
     display: flex;
     flex: 1; 
     justify-content: flex-end;
@@ -24,10 +26,10 @@ export default {
       width: 100%;
     }
   `,
-    BoxDescriptionLeft: styled.div`
+  BoxDescriptionLeft: styled.div`
     display: flex;
     flex-direction: column;
-    background-image: url(assets/tailor.png);
+    background-image: url(${BackImg});
     max-width: 905px;
     height: 360px;
     justify-content: flex-end;
@@ -43,7 +45,7 @@ export default {
       justify-content: flex-start;
     }
   `,
-    TextDescription: styled.h3`
+  TextDescription: styled.h3`
     font-family: ${({ theme }) => theme.fonts.lato};
     color: ${({ theme }) => theme.colors.grayRelative};
     font-weight: 300;
@@ -56,7 +58,7 @@ export default {
       margin-top: 41px;
     }
   `,
-    TextInfo: styled.p`
+  TextInfo: styled.p`
     font-family: ${({ theme }) => theme.fonts.cormorant};
     color: ${({ theme }) => theme.colors.primary};
     font-style: italic;
@@ -66,7 +68,7 @@ export default {
 
     }
   `,
-    TextInfoDescription: styled.p`
+  TextInfoDescription: styled.p`
     font-family: ${({ theme }) => theme.fonts.lato};
     color: ${({ theme }) => theme.colors.textGolden};
     font-size: 20px;
@@ -76,7 +78,7 @@ export default {
       font-weight: 300;
     }
   `,
-    BoxPhotoNelson: styled.div`
+  BoxPhotoNelson: styled.div`
     display: flex;
     position: absolute;
     justify-content: center;
@@ -94,14 +96,14 @@ export default {
       display: none;
     }
   `,
-    ImageStyle: styled.img`
+  ImageStyle: styled.img`
     width: 288px;
     height: 350px;
     transform: rotate(-7deg);
     margin-top: 8px;
     margin-left: 1px;
   `,
-    BoxImageMobile: styled.div`
+  BoxImageMobile: styled.div`
   display: none;
   position: relative;
 
@@ -111,13 +113,13 @@ export default {
     height: 300px;
   }    
 `,
-    ImagePerfilMobile: styled.img`
+  ImagePerfilMobile: styled.img`
   @media(max-width:768px) {
     width: 100%;
     height: 300px;
   }
 `,
-    BoxShadowMobile: styled.div`
+  BoxShadowMobile: styled.div`
   @media(max-width:768px) {
     position: absolute;
     width: 100%;
@@ -125,7 +127,7 @@ export default {
     background-color: ${({ theme }) => theme.colors.primaryOpacity};
   }
 `,
-    BoxPhotoMobileFloat: styled.div`
+  BoxPhotoMobileFloat: styled.div`
   @media(max-width:768px) {
     position: absolute;
     display: flex;
@@ -139,13 +141,13 @@ export default {
     margin-left: 35px;
   }
 `,
-    ImagePhotoMobile: styled.img`
+  ImagePhotoMobile: styled.img`
   @media(max-width:768px) {
     transform: rotate(-7deg);
     margin-top: 8px;
   }
 `,
-    BoxDescriptionRight: styled.div`
+  BoxDescriptionRight: styled.div`
     position: relative;
     display: flex;
     width: 313px;
@@ -155,11 +157,11 @@ export default {
       display: none;
     }
   `,
-    ImagePerfil: styled.img`
+  ImagePerfil: styled.img`
     width: 313px;
     height: 360px;
   `,
-    BoxShadow: styled.div`
+  BoxShadow: styled.div`
     width: 313px;
     height: 360px;
     background-color: ${({ theme }) => theme.colors.primaryOpacity};

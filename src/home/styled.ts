@@ -1,8 +1,12 @@
 import styled from "styled-components"
 
+import BannerImg from "../assets/Banner.png"
+
+import BannerMbImg from "../assets/mobile/banner.png"
+
 
 export default {
-    Container: styled.div`
+  Container: styled.div`
     font-family: ${({ theme }) => theme.fonts.lato};
 
     @media(max-width:768px) {
@@ -11,20 +15,20 @@ export default {
       flex-direction: column;
     }
   `,
-    BoxBanner: styled.section`
+  BoxBanner: styled.section`
     width: 100%;
     height: 630px;
     background-color: ${({ theme }) => theme.colors.backgroundBlack};
-    background-image: url(assets/Banner.png);
+    background-image: url(${BannerImg});
 
     @media(max-width:768px) {
        width: 100%;
        height: 735px;
-       background-image: url(assets/mobile/banner.png);
+       background-image: url(${BannerMbImg});
        background-size: cover;
     }
   `,
-    BoxButtonMobile: styled.div`
+  BoxButtonMobile: styled.div`
     display: none;
 
     @media(max-width:768px) {
@@ -36,7 +40,7 @@ export default {
       z-index: 1000;
     }
   `,
-    BoxLogo: styled.div`
+  BoxLogo: styled.div`
     display: none;
 
     @media(max-width:768px) {
@@ -47,7 +51,7 @@ export default {
        align-items: center;
     }
   `,
-    ImageLogo: styled.img`
+  ImageLogo: styled.img`
     display: none;
 
     @media(max-width:768px) {
@@ -56,7 +60,7 @@ export default {
       height: 66px;
     }
   `,
-    BoxGroup: styled.div`
+  BoxGroup: styled.div`
     height: calc(100% - 111px);
     width: 410px;
     margin-left: 98px;
@@ -68,7 +72,7 @@ export default {
       padding-top: 0;
     }
   `,
-    BoxTitle: styled.div`
+  BoxTitle: styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -77,7 +81,7 @@ export default {
       padding: 23px;      
     }    
   `,
-    TextInitial: styled.span`
+  TextInitial: styled.span`
     font-family: ${({ theme }) => theme.fonts.plafair};
     color: ${({ theme }) => theme.colors.secondary};
     font-size: 32px;
@@ -89,7 +93,7 @@ export default {
        text-align: left;
     }
   `,
-    TextMiddle: styled.h1`
+  TextMiddle: styled.h1`
     font-family: ${({ theme }) => theme.fonts.plafair};
     color: ${({ theme }) => theme.colors.primaryOpacity};
     font-size: 90px;
@@ -101,7 +105,7 @@ export default {
        font-size: 76px;
     }
   `,
-    TextFinal: styled.span`
+  TextFinal: styled.span`
     font-family: ${({ theme }) => theme.fonts.plafair};
     color: ${({ theme }) => theme.colors.secondary};
     font-size: 32px;
@@ -114,7 +118,7 @@ export default {
        font-size: 26px;
     }
   `,
-    TextDescription: styled.h2`
+  TextDescription: styled.h2`
     font-size: 24px;
     color: ${({ theme }) => theme.colors.textClean};
     font-family: ${({ theme }) => theme.fonts.lato};
@@ -126,7 +130,7 @@ export default {
       font-size: 22px;
     }
   `,
-    BoxButton: styled.div`
+  BoxButton: styled.div`
     margin-top: 25px;
     width: 298px;
 
@@ -136,7 +140,7 @@ export default {
       margin-top: 41px;
     }
   `,
-    BoxIntroduction: styled.div`
+  BoxIntroduction: styled.div`
     width: 100%;
     padding-top: 10px;
 
@@ -146,56 +150,56 @@ export default {
       width: 100vw;
     }
   `,
-    BoxAssessmentNelson: styled.div`
+  BoxAssessmentNelson: styled.div`
     width: 100%;
 
     @media(max-width:768px) {
       width: 100vw;
     }
   `,
-    BoxAttributes: styled.div`
+  BoxAttributes: styled.div`
     width: 100%;
 
     @media(max-width:768px) {
       display: none;
     }
   `,
-    BoxCondition: styled.div`
+  BoxCondition: styled.div`
     width: 100%;
 
     @media(max-width:768px) {
       width: 100vw;
     }
   `,
-    BoxTailoring: styled.div`
+  BoxTailoring: styled.div`
     width: 100%;
 
     @media(max-width:768px) {
       width: 100vw;
     }
   `,
-    BoxDepoiment: styled.div`
+  BoxDepoiment: styled.div`
     width: 100%;
 
     @media(max-width:768px) {
       width: 100vw;
     }
   `,
-    Contact: styled.div`
+  Contact: styled.div`
     width: 100%;
 
     @media(max-width:768px) {
       width: 100vw;
     }
   `,
-    Footer: styled.div`
+  Footer: styled.div`
     width: 100%;
 
     @media(max-width:768px) {
       width: 100vw;
     }
   `,
-    MenuStatic: styled.div`
+  MenuStatic: styled.div`
     width: 100%;
     position: fixed;
     z-index: 6000;

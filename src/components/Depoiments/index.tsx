@@ -4,6 +4,8 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import { IDepoiment } from '../../dtos/depoimentsDto'
 import depoiments from '../../services/depoiments'
 
+import JosimarImg from '../assets/josimar.png'
+
 const Depoiment = () => {
 
     const [clientsDepoiments, setClientsDepoiments] = useState<IDepoiment[]>([] as IDepoiment[]);

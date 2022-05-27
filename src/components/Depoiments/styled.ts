@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
+import DepoimentsImg from '../../assets/depoiments1.png'
+
 interface IDepoimentsProps {
-    active: boolean;
+  active: boolean;
 }
 
 export default {
-    Container: styled.section`
+  Container: styled.section`
     position: relative;
     display: flex;
-    background-image: url(assets/testimonial.png);    
+    background-image: url(${DepoimentsImg});    
     background-color: ${({ theme }) => theme.colors.backgroundBlue};    
     width: 100%;
     height: 608px;
@@ -21,7 +23,7 @@ export default {
       background-size: cover;
     }
   `,
-    Content: styled.div`
+  Content: styled.div`
     display: flex;
     flex: 1;
     justify-content: center;
@@ -34,7 +36,7 @@ export default {
       padding: 0;
     }
   `,
-    BoxButtonLeft: styled.div<{ direction: boolean }>`
+  BoxButtonLeft: styled.div<{ direction: boolean }>`
     display: flex;
     width: 80px;
     height: 100%;
@@ -50,7 +52,7 @@ export default {
       bottom: 6px;
     }
   `,
-    BoxBodyDepoiment: styled.div`
+  BoxBodyDepoiment: styled.div`
     display: flex;
     width: 100%;
     height: 100%;
@@ -65,7 +67,7 @@ export default {
       padding: 0;
     }
   `,
-    BoxTitleDepoiment: styled.div`
+  BoxTitleDepoiment: styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,19 +79,19 @@ export default {
       margin-top: 20px;
     }
   `,
-    TextTitleDepoiment: styled.h2`
+  TextTitleDepoiment: styled.h2`
     font-family: ${({ theme }) => theme.fonts.cormorant};
     color: ${({ theme }) => theme.colors.textGrayLight};
     font-weight: 300;
     font-size: 38px;
     margin-top: 30px;
   `,
-    BoxLineText: styled.hr`
+  BoxLineText: styled.hr`
     width: 53px;
     border-color: ${({ theme }) => theme.colors.lineBlue};
     margin-top: 10px;    
   `,
-    BoxSeparatorMobile: styled.div`
+  BoxSeparatorMobile: styled.div`
     align-items: center;
 
     @media(max-width:768px) {
@@ -99,7 +101,7 @@ export default {
       justify-content: space-between;
     }
   `,
-    BoxImage: styled.div`
+  BoxImage: styled.div`
     margin-top: 46px;
     width: 121px;
     height: 121px;
@@ -108,11 +110,11 @@ export default {
     border: 2px solid ${({ theme }) => theme.colors.textGolden};
     margin-bottom: 16px;
   `,
-    ImageAvatar: styled.img`
+  ImageAvatar: styled.img`
     width: 100%;
     height: 100%;
   `,
-    TextDepoimentDescription: styled.p`
+  TextDepoimentDescription: styled.p`
     font-family: unset${({ theme }) => theme.fonts.cormorant};
     color: ${({ theme }) => theme.colors.textGrayClean};
     font-weight: 300;
@@ -124,7 +126,7 @@ export default {
       font-size: 24px;
     }
   `,
-    BoxDepoimentsVisible: styled.div<IDepoimentsProps>`
+  BoxDepoimentsVisible: styled.div<IDepoimentsProps>`
     display: ${({ active }) => active ? 'flex' : 'none'};
     min-height: 400px;
     flex-direction: column;
@@ -137,39 +139,39 @@ export default {
       flex: 1;
     }
   `,
-    TextName: styled.p`
+  TextName: styled.p`
     margin-top: 14px;
     font-family: ${({ theme }) => theme.fonts.cormorant};
     color: ${({ theme }) => theme.colors.textGolden};
     font-size: 20px;
   `,
-    TextDescription: styled.p`
+  TextDescription: styled.p`
     margin-top: 3px;
     font-family: ${({ theme }) => theme.fonts.lato};
     color: ${({ theme }) => theme.colors.textGrayActive};
     font-size: 14px;
     font-weight: 300;
   `,
-    BoxButtons: styled.div`
+  BoxButtons: styled.div`
     display: flex;
 
     @media(max-width:768px) {
       margin-bottom: 40px;
     }
   `,
-    Buttons: styled.div<IDepoimentsProps>`
+  Buttons: styled.div<IDepoimentsProps>`
     width: 10px;
     height: 10px;
     border-radius: 5px;
     background-color: ${({ theme, active }) =>
-            active ? theme.colors.primaryLigh : 'transparent'};
+      active ? theme.colors.primaryLigh : 'transparent'};
     border: 1px solid ${({ theme }) => theme.colors.primaryLigh};
     margin-top: 32px;
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
   `,
-    BoxButtonRight: styled.div<{ direction: boolean }>`
+  BoxButtonRight: styled.div<{ direction: boolean }>`
     display: flex;
     width: 80px;
     height: 100%;
@@ -185,7 +187,7 @@ export default {
       bottom: 6px;
     }
   `,
-    ButtonSlider: styled.button`
+  ButtonSlider: styled.button`
     display: flex;
     justify-content: center;
     align-items: center;

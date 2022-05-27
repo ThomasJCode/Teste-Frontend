@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import S from './styled'
 import menu from '../../services/menu'
 
+import LogoImg from "../../assets/logofooter.png";
+
 const MenuStatic = () => {
 
   const [data, setData] = useState(false);
@@ -22,7 +24,7 @@ const MenuStatic = () => {
     <S.Container visible={data}>
       <S.BoxLogo>
         <S.Link href="#home">
-          <S.ImageLogo src="../../assets/logofooter.png" />
+          <S.ImageLogo src={LogoImg} />
         </S.Link>
       </S.BoxLogo>
 

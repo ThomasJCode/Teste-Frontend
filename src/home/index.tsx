@@ -14,6 +14,8 @@ import { Footer } from '../components/Footer'
 import { MenuStatic } from '../components/MenuStatic'
 import { MenuMobile } from '../components/MenuMobile'
 
+import LogoImg from "../assets/logoheader.png";
+
 
 const Home = () => {
 
@@ -39,7 +41,7 @@ const Home = () => {
                 </S.BoxButtonMobile>
 
                 <S.BoxLogo>
-                    <S.ImageLogo src="../assets/logoheader.png" alt="logo" />
+                    <S.ImageLogo src={LogoImg} alt="logo" />
                 </S.BoxLogo>
 
                 <S.BoxGroup>
